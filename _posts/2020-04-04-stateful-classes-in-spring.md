@@ -250,6 +250,4 @@ public class Cart {
 }
 ``` 
 
-Full source code can be found here:
-
-[https://github.com/plilja/stateful-spring]
+Full source code can be found [here](https://github.com/plilja/stateful-spring).
