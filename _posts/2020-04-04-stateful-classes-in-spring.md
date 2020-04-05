@@ -4,28 +4,28 @@ title: Stateful classes in Spring
 ---
 
 I have been working with Spring at work for a couple of years now. 
-One thing that has struck me regarding Spring is that it really discourages
+One thing that has struck me regarding Spring is that it discourages
 from having business logic on stateful classes. 
 
 This is because any business logic will probably reside on a Spring bean, 
 and Spring beans are most often Singletons. Even if you do tell Spring to
-scope your bean to a request, it will still be difficult to 
-have data on it since Spring's DI mechanism doesn't know your data. 
+scope your bean to a request, it will still be difficult to have state 
+on it since Spring's DI mechanism doesn't know your data. 
 
-Instead you typically end up putting your logic in some kind of 
+Instead, you typically end up putting your logic in some kind of 
 Service-class that acts upon the data coming as a method parameter.
 I.e. you will end up with imperative code. 
 
 Personally I kind of like imperative programming so I'm not saying this
-is necessarily bad. But it does puzzle me a bit, Spring is a really 
+is necessarily bad. But it does puzzle me a bit, Spring is a very 
 popular Java framework and Java is a language that strongly 
-encourages object oriented programming.
+encourages object-oriented programming.
 
 Therefore I'm going to try writing some stateful Spring classes containing
 business logic. I'm going to use a shopping cart for an online store
-as an example. Of course this example is going to be simple enough
+as an example. Of course, this example is going to be simple enough
 that the right solution would be to put everything in the
-controller. But let's imagine that the logic was a bit more convuluted,
+controller. But let's imagine that the logic was a bit more convoluted,
 as it probably would have been in a real case.
 
 ##### Spring style solution
@@ -117,19 +117,19 @@ class CartService {
 }
 ``` 
 
-#### (more) Object oriented solution
+#### Object-oriented solution (more object-oriented atleast) 
 
-My thoughts on how to write this in a more object oriented way would be something like the code snippets 
+My thoughts on how to write this in a more object-oriented way would be something like the code snippets 
 below. I'm still not sure how I feel about this. 
 
-I think that for a simple project like this the "Spring way" would definitaly be preferable. I you're doing 
+I think that for a simple project like this the "Spring way" would definitely be preferable. If you're doing 
 microservices you might never pass the threshold for when this becomes preferable. We need to work against 
 the framework a bit:
 * We need to manually instantiate Carts, as the list of dependencies grows, I can see this becoming annoying.
 * We need to tell Jackson how to serialize the object, if we were to deserialize carts we would need even more work.
 * The Swagger API generator can't automatically determine what a Cart should look like.
 
-For a larger project I can see the winnings being larger. You typically wouldn't want to pass
+For a larger project, I can see the winnings being larger. You typically wouldn't want to pass
 around "cartId"'s everywhere. You don't want to pass around CartEntities either. But in a large 
 project for a shopping site, the cart object is probably going to be a central concept.
 
@@ -252,4 +252,4 @@ public class Cart {
 
 Full source code can be found here:
 
-https://github.com/plilja/stateful-spring
+[https://github.com/plilja/stateful-spring]
