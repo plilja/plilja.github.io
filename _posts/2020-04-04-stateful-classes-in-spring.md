@@ -8,9 +8,7 @@ One thing that has struck me regarding Spring is that it discourages
 from having business logic on stateful classes. 
 
 This is because any business logic will probably reside on a Spring bean, 
-and Spring beans are most often Singletons. Even if you do tell Spring to
-scope your bean to a request, it will still be difficult to have state 
-on it since Spring's DI mechanism doesn't know your data. 
+and Spring beans are most often Singletons. 
 
 Instead, you typically end up putting your logic in some kind of 
 Service-class that acts upon the data coming as a method parameter.
@@ -121,7 +119,7 @@ class CartService {
 
 My thoughts on how to write this in a more object-oriented way would be something like the code snippets 
 below. By annotating the Cart class as @Scope("provided"), Spring will create a new instance for
-it whenever requested. The method annotated with @Lookup will be used to create does instance. 
+it whenever requested. The method annotated with @Lookup will be used to create that instance. 
 It does feels a little scary having state on classes managed by Spring. 
 
 In this simple example the previous solution is probably preferable. In fact we could have skipped the
