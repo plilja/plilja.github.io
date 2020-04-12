@@ -120,18 +120,17 @@ class CartService {
 #### Object-oriented solution (more object-oriented atleast) 
 
 My thoughts on how to write this in a more object-oriented way would be something like the code snippets 
-below. I'm still not sure how I feel about this. 
+below. By annotating the Cart class as @Scope("provided"), Spring will create a new instance for
+it whenever requested. The method annotated with @Lookup will be used to create does instance. 
+It does feels a little scary having state on classes managed by Spring. 
 
-I think that for a simple project like this the "Spring way" would definitely be preferable. If you're doing 
-microservices you might never pass the threshold for when this becomes preferable. We need to work against 
-the framework a bit:
-* We need to manually instantiate Carts, as the list of dependencies grows, I can see this becoming annoying.
-* We need to tell Jackson how to serialize the object, if we were to deserialize carts we would need even more work.
-* The Swagger API generator can't automatically determine what a Cart should look like.
+In this simple example the previous solution is probably preferable. In fact we could have skipped the
+service and put everything in the controller. 
 
-For a larger project, I can see the winnings being larger. You typically wouldn't want to pass
-around "cartId"'s everywhere. You don't want to pass around CartEntities either. But in a large 
-project for a shopping site, the cart object is probably going to be a central concept.
+For a larger project, I can see the winnings  with the object oriented approach being larger. 
+You typically wouldn't want to pass around "cartId"'s everywhere. You don't want to pass 
+around CartEntities either. But in a large project for a shopping site, the cart object 
+is probably going to be a central concept.
 
 ##### Controller
 ```java
@@ -167,48 +166,53 @@ class CartControllerV2 {
 }
 ``` 
 
-###### Factory (we can no longer let Spring instantiate the class containing the logic)
+###### Factory (we need to help Spring with instantiating Carts)
 ```java
-@RequiredArgsConstructor
 @Component
-public class CartFactory {
-    private final CartRepository cartRepository;
-    private final ProductRepository productRepository;
-
-    Cart getCart(String cartId) {
-        var cartEntity = getCartEntity(cartId);
-        return new Cart(cartEntity, cartRepository, productRepository);
-    }
+public abstract class CartFactory {
+    @Lookup
+    abstract Cart getCart(String cartId);
 
     Cart newCart() {
-        var cartEntity = new CartEntity();
-        return new Cart(cartEntity, cartRepository, productRepository);
-    }
-
-    private CartEntity getCartEntity(String cartId) {
-        return cartRepository.findById(cartId)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Cart with id %s not found", cartId)));
+        return getCart(null);
     }
 }
 ``` 
 
 ###### Logic class
 ```java
-@RequiredArgsConstructor
+@Component
+@Scope("prototype")
 public class Cart {
-    private final CartEntity cartEntity;
-    private final CartRepository cartRepository;
-    private final ProductRepository productRepository;
+    private String cartId;
+    private final MemoizedSupplier<CartEntity> cartEntity = new MemoizedSupplier<>(this::getCartEntity);
+    @Autowired
+    private CartRepository cartRepository;
+    @Autowired
+    private ProductRepository productRepository;
+
+    public Cart(String cartId) {
+        this.cartId = cartId;
+    }
 
     void save() {
-        var saved = cartRepository.save(cartEntity);
-        if (cartEntity.getCartId() == null) {
-            cartEntity.setCartId(saved.getCartId());
+        var saved = cartRepository.save(cartEntity.get());
+        if (cartId == null) {
+            cartId = saved.getCartId();
+            cartEntity.get().setCartId(saved.getCartId());
+        }
+    }
+
+    private CartEntity getCartEntity() {
+        if (cartId != null) {
+            return cartRepository.findById(cartId).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        } else {
+            return new CartEntity();
         }
     }
 
     void addItemToCart(String productId) {
-        cartEntity.getContents().stream()
+        cartEntity.get().getContents().stream()
                 .filter(content -> content.getProductEntity().getProductId().equalsIgnoreCase(productId))
                 .findFirst()
                 .ifPresentOrElse(
@@ -220,22 +224,22 @@ public class Cart {
                                     .productEntity(product)
                                     .quantity(1)
                                     .build();
-                            cartEntity.getContents().add(cartContent);
+                            cartEntity.get().getContents().add(cartContent);
                         }
                 );
         save();
     }
 
     void removeItemFromCart(String productId) {
-        var cartContents = cartEntity.getContents().stream()
+        var cartContents = cartEntity.get().getContents().stream()
                 .filter(content -> content.getProductEntity().getProductId().equalsIgnoreCase(productId))
                 .findFirst()
                 .orElseThrow(() -> {
-                    return new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Product with id %s not present in cart with id %s", productId, cartEntity.getCartId()));
+                    return new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Product with id %s not present in cart with id %s", productId, cartId));
                 });
         cartContents.setQuantity(cartContents.getQuantity() - 1);
         if (cartContents.getQuantity() == 0) {
-            cartEntity.getContents().remove(cartContents);
+            cartEntity.get().getContents().remove(cartContents);
         }
         save();
     }
@@ -245,7 +249,7 @@ public class Cart {
      */
     @JsonValue
     CartEntity jsonValue() {
-        return cartEntity;
+        return cartEntity.get();
     }
 }
 ``` 
