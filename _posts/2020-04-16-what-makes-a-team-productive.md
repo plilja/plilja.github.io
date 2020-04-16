@@ -2,12 +2,10 @@
 layout: post
 title: What makes a team productive?
 ---
-
-My interests mostly lie in the technical
-side of software development. But after almost a decade
-working professionally, I have learned that the softer
-values matter. I tend not to dwell on them that much though. 
-As a problem solver, I simply don't find them that
+My interests mostly lie in the technical side of software
+development. But through experience,  I have learned that
+the softer values matter. I tend not to dwell on them that
+much though. As a problem solver, I simply don't find them that
 interesting to think about. 
 
 However, in this post, I'm going to try and summarize some
@@ -23,7 +21,7 @@ then you probably have some things that can be optimized.
 If you have ever developed code in a REPL, you have first-hand
 experience that iteration speed matters. In a REPL,
 you get instant feedback on your code. This means that you
-can work out a solution to a simple problem really fast.
+can work out a solution to a simple problem very fast.
 
 For a larger project where the REPL is not suitable. Things 
 to consider when optimizing for iteration speed are:
@@ -44,31 +42,33 @@ I feel motivated.
 
 Some things to consider:
 
-* Minimize the amount of "friction"
-** Example of friction:
-*** Having to talk with a third-party vendor
-*** Arguing about nitpicks in code review
-*** A flaky integration test
-*** Unstable test environment
-*** Windows update
-* Working on a good solution feels a lot better than working on a bad one
-* Feeling appreciated
-** Who wants to work on something if no one cares about it?
-* I like mentally challenging tasks, and I imagine a lot of other developers do the same
+1. Minimize the amount of "friction"
+   * Some examples of friction:
+      * Arguing about nitpicks in code review
+      * A flaky integration test
+      * Unstable test environment
+      * Windows update
+      * Having to talk with a third-party vendor
+2. Working on a good solution feels a lot better than working on a bad one
+3. Make sure your developers feel appreciated. A compliment is free to give.
+4. I like mentally challenging tasks, and I imagine a lot of other developers do the same
 
 ## Complexity
 
-Complex code is a big productivity killer. You'll spend time
-trying to figure out why stuff was done the way they were. Quite
-often, you need deep domain knowledge to refactor complex code into simpler
-coder I don't think that you can completely eradicate complex code,
+Complex code is a big productivity killer. You'll spend lots of time
+trying to figure out what's going on when dealing with complex code. With
+time, complex code tends to get even more complex. Usually, you need deep domain
+knowledge and a fearless attitude to refactor complex code into simpler
+code. I don't think that you can completely eradicate complex code,
 some things are just complex. But a lot of the time it can be simpler.
 
 Some things to think about:
 
-* Adding technologies, third-party dependencies, tooling and so on can also add to your complexity
-* Refactoring into smaller classes and methods can make each individual class and method easier to understand, but at the same time it can make the relationships between them harder to understand
-* Microservices will usually be more complex than monoliths (microservices have some other qualities that may make them preferable). More and smaller microservices will probably mean that the system as a whole will be more complex.
+1. Adding technologies, third-party dependencies, tooling and so on will usually add to your complexity
+2. Refactoring into smaller classes and methods can make each individual class and method easier to understand, but at the same time it can make the relationships between them harder to understand
+3. Microservices will usually be more complex than monoliths (microservices have some other qualities that may make them preferable). 
+4. More and smaller microservices will probably mean that the system as a whole will be more complex.
+5. If you're in a larger organization with separate Platform- or Architecture teams. You might want to make it their highest priority to keep your "feature teams" productive. I think it makes sense to abstract away the technical problems from the "feature teams".
 
 ## Safety net
 
@@ -80,3 +80,12 @@ which will probably mean that you will be slow doing it. And you
 will add complexity to the code which will just make it worse the
 next time.
 
+## Don't trust your process blindly
+
+Processes like Scrum or Kanban are supposed to help your team.
+Be pragmatic about them, don't trust them blindly. 
+
+For example, it's not going to be a good idea
+to have your developers doing nothing just because an agile
+coach said that 4 should be your VIP-limit and 4 issues are
+currently sitting blocked waiting for an answer from a third-party.
