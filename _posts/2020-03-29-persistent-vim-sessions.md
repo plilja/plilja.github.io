@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistent Vim sessions!
+title: Persistent Vim sessions
 ---
 
 I just learnt that you can persist the history between Vim sessions. This is hugely useful in my view and it just takes two lines in your vimrc to set it up.
