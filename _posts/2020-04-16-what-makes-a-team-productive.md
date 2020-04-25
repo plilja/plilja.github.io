@@ -89,3 +89,17 @@ For example, it's not going to be a good idea
 to have your developers doing nothing just because an agile
 coach said that 4 should be your VIP-limit and 4 issues are
 currently sitting blocked waiting for an answer from a third-party.
+
+## Best tools
+
+Ensure your developers have the best tools available to them.
+If possible, you should let your developers pick their own tools.
+This includes stuff like laptop, OS, monitor, and IDE.
+
+Also ensure that you're working space is reasonably quiet. 
+A large part of programming is about concentration and that will
+drastically drop in a noise environment.
+
+If you have an open-plan office, please think about how you
+can minimize noise. You might also want to consider hiring
+an acoustic consultant to help with actions.
