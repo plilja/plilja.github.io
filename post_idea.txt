@@ -1,0 +1,7 @@
+resilience4j
+event sourcing
+architecture between teams
+distributed tracing
+siege
+consumer driven contract testing
+intellij shortcuts
