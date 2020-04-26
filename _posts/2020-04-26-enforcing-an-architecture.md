@@ -61,3 +61,14 @@ Here are a few examples of what you can do with ArchUnit:
 * Enforce that an api-package does not access an impl-package
 * Enforce that an impl-package A does not access impl-package B (only api-package B)
 * Enforcing naming conventions (for example all classes annotated with @RestController should be name ...Controller)
+
+Here is a link to the [documentation](https://www.archunit.org/userguide/html/000_Index.html) for ArchUnit.
+
+Links to other useful tools for enforcing an Architecture:
+* [Spoon](http://spoon.gforge.inria.fr)
+* [CheckStyle](https://checkstyle.sourceforge.io)
+* [Maven PMD plugin](http://maven.apache.org/plugins/maven-pmd-plugin)
+* [Sonar](https://www.sonarqube.org)
+* [Reflections library](https://github.com/ronmamo/reflections)
+* [Macker Maven plugin](https://github.com/andrena/macker-maven-plugin)
+* [Restrict Maven plugin](https://github.com/yamanyar/restrict-maven-plugin)
