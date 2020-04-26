@@ -27,8 +27,8 @@ you get a lot of transitive dependencies, that you might
 not want but you cannot escape.
 
 Doing some investigation, I found [ArchUnit](https://www.archunit.org) to
-look quite promising. With it, you can write a unit test listing
-that your code may only use a select few packages. 
+look quite promising. You can use it to write unit test that verifies
+parts of your architecture.  
 
 This is an example of how to specify that your code
 may only use a subset of the packages available in Spring framework,
