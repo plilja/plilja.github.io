@@ -3,13 +3,10 @@ layout: post
 title: What makes a team productive?
 ---
 My interests mostly lie in the technical side of software
-development. But through experience,  I have learned that
-the softer values matter. I tend not to dwell on them that
-much though. As a problem solver, I simply don't find them that
-interesting to think about. 
-
-However, in this post, I'm going to try and summarize some
-thoughts on how to keep your developers productive.
+development. But through experience, I have learned that
+the softer values matter. In this post, I'm going to try
+and summarize some thoughts on how to keep your developers
+productive.
 
 I've found it not uncommon that a simple bugfix that takes
 15-30 minutes to code, can take days before being fully
