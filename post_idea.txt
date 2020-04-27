@@ -5,3 +5,6 @@ distributed tracing
 siege
 consumer driven contract testing
 intellij shortcuts
+testing spring applications (wiremock, etc)
+pragmatic programmer
+savepoints jdbc, nested transactions
