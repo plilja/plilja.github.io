@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Enforcing an architecture
+tags: [architecture, java]
 ---
 
 One problem with architectures and code styles is that

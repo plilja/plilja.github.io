@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Documenting code
+tags: [documentation]
 ---
 
 It amazes me how often you see useless code documentation.

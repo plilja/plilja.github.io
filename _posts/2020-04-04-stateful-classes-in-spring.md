@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Stateful classes in Spring
+tags: [spring, architecture, java]
 ---
 
 I have been working with Spring at work for a couple of years now. 

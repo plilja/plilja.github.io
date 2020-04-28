@@ -1,0 +1,14 @@
+vim:
+  name: Vim
+architecture:
+  name: Architecture
+keyboard:
+  name: Keyboard
+java:
+  name: Java
+kotlin:
+  name: Kotlin
+python:
+  name: Python
+spring:
+  name: Spring

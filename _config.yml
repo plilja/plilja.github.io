@@ -84,3 +84,16 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+collections:
+    my_tags:
+        output: true
+        permalink: /blog/tag/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: blog_by_tag
