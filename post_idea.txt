@@ -8,3 +8,4 @@ intellij shortcuts
 testing spring applications (wiremock, etc)
 pragmatic programmer
 savepoints jdbc, nested transactions
+ergodox
