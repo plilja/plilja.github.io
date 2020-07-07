@@ -77,9 +77,9 @@ and at each place you use the cache, you must also specify a key generator.
 @Import(LoadingCacheConfiguration.class)
 public class LoadingCacheApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(LoadingCacheApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(LoadingCacheApplication.class, args);
+    }
 
     @Cacheable(value = "hello", keyGenerator = "loadingCacheKeyGenerator")
     public String hello(String name) {
