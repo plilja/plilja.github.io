@@ -9,7 +9,7 @@ name: Plilja
 description: Freelance Software Developer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars1.githubusercontent.com/u/6896993?s=400&u=6123e8c5850403481f69dd2aae99e3c32476728e&v=4
+avatar: /images/avatar.jpeg
 
 gems:
   - jekyll-paginate-v2
