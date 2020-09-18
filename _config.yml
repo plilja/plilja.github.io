@@ -12,12 +12,9 @@ description: Freelance Software Developer
 avatar: /images/avatar.jpeg
 
 gems:
-  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-seo-tag
-#
-# Flags below are optional
-#
+  - jekyll-feed 
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -74,12 +71,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  style: :compressed # You might prefer to minify using :compressed
 
 # Exclude these files from your production _site
 exclude:
