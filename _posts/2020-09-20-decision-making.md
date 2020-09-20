@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Decision making
-tags: [monitoring, crosscut]
+tags: [productivity]
 ---
 
 Making decisions can be hard. Especially making hard
