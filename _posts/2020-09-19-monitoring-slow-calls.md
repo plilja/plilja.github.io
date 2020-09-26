@@ -15,7 +15,68 @@ of code.
 This example uses Java and Spring. But the principle should
 be applicable in any language that has AOP support.
 
-<script src="https://gist.github.com/plilja/2e616d9f909bd30269693c542be83dd4.js"></script>
+```java
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+public @interface Monitored {
+}
+```
+
+```java
+@Component
+@Aspect
+public class MonitorSlowCalls {
+    private static final Logger LOG = LoggerFactory.getLogger(MonitorSlowCalls.class);
+
+    private final MeterRegistry meterRegistry;
+    private final long slowCallsLogThreshold;
+
+    public MonitorSlowCalls(MeterRegistry meterRegistry, @Value("${slow-calls-log-threshold:500}") int slowCallsLogThreshold) {
+        this.meterRegistry = meterRegistry;
+        this.slowCallsLogThreshold = slowCallsLogThreshold;
+    }
+
+    @Pointcut("within(@se.plilja.Monitored *)")
+    public void monitored() {
+    }
+
+    @Pointcut("execution(!private * *(..))")
+    public void publicProtectedOrPackagePrivate() {
+    }
+
+    @Around("publicProtectedOrPackagePrivate() && monitored()")
+    public Object monitorSlowCalls(ProceedingJoinPoint pjp) throws Throwable {
+        long startTime = System.currentTimeMillis();
+        try {
+            Timer timer = meterRegistry.timer("method.timer", List.of(Tag.of("method", pjp.getSignature().getName())));
+            Object result = timer.recordCallable(() -> proceed(pjp));
+            long endTime = System.currentTimeMillis();
+            logIfSlow(endTime - startTime, pjp);
+            return result;
+        } catch (Throwable throwable) {
+            long endTime = System.currentTimeMillis();
+            logIfSlow(endTime - startTime, pjp);
+            throw throwable;
+        }
+    }
+
+    // Don't wan't to catch the Throwable which the compiler will force us to to without this annotation
+    @SneakyThrows
+    private Object proceed(ProceedingJoinPoint pjp) {
+        return pjp.proceed();
+    }
+
+    private void logIfSlow(long duration, ProceedingJoinPoint pjp) {
+        String className = pjp.getTarget().getClass().getSimpleName();
+        String methodName = pjp.getSignature().getName();
+        if (duration >= slowCallsLogThreshold) {
+            LOG.info("Call took [duration={}] [class={}] [method={}]", duration, className, methodName);
+        } else {
+            LOG.debug("Call took [duration={}] [class={}] [method={}]", duration, className, methodName);
+        }
+    }
+}
+```
 
 Any classes annotated as @Monitored will be monitored for slow
 calls. You will also get metrics to monitor trends of your 
