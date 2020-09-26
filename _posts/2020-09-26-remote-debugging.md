@@ -31,7 +31,7 @@ your test environment.
 After that, you can connect with IntelliJ using a remote debug
 "Run profile" with settings similar to the following. 
 
-![Run profile](/images/remote-debug-idea.png "Idea run profile")
+![Run profile](/images/remote-debug-idea.jpg "Idea run profile")
 
 When you start that run profile you can debug similar to what you
 could locally. Some features like reassigning variables and hot-swapping
