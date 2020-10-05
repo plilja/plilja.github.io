@@ -60,7 +60,7 @@ public class MonitorSlowCalls {
         }
     }
 
-    // Don't wan't to catch the Throwable which the compiler will force us to to without this annotation
+    // Don't want to catch the Throwable which the compiler will force us to to without this annotation
     @SneakyThrows
     private Object proceed(ProceedingJoinPoint pjp) {
         return pjp.proceed();
