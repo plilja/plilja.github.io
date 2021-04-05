@@ -6,7 +6,7 @@ tags: [architecture, funcprog]
 
 The command-query separation (CQS) principle states that 
 every function should either be a command that performs an
-action or a query returns a value. But never both at the same
+action or a query that returns a value. But never both at the same
 time.
 
 I.e. your functions should either have no side effects (be referentially
@@ -20,7 +20,7 @@ This is one of my favorite programming principles. If you apply
 it, your functions will make more sense. 
 
 When you follow this principle, you will also find that your
-codes become easier to read and debug. While looking for a
+code becomes easier to read and debug. While looking for a
 bug regarding a computational error, you will probably look at
 your query functions and can ignore your command functions. While
 looking for a bug regarding side effects (persistence for example),
