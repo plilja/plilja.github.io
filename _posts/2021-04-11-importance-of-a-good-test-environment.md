@@ -12,19 +12,22 @@ For a startup it might even be fine to test code
 in prod.
 
 The problem with this approach is that it might be hard
-to retrofit a good test environment. Lets first define
-what a good test environment is. A good test environment is:
+to retrofit a good test environment. In the long run
+being able to test code effectively will be hugely important for
+developer productivity.
+
+Lets first define what a good test environment is. A good test environment is:
 
 * Stable
-** Preferable as stable as prod
+  * Preferable as stable as prod
 * Wipeable
-** If it breaks it can easily be reset
+  * If it breaks it can easily be reset
 * Cloneable
-** Should be easy to spin up another copy, preferable on a local dev machine
+  * Should be easy to spin up another copy, preferable on a local dev machine
 * Easily deployable
-** Should be easy to test your code before committing to master
+  * Should be easy to test your code before committing to master
 * Disconnects costly/unstable prod dependencies
-** For example a third party payment provider might be substituted for a mock
+  * For example a third party payment provider might be substituted for a mock
 
 I believe a lot of companies get most of these points wrong.
 Except for the last point which is pretty much a prerequisite for
