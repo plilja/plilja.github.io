@@ -1,7 +1,7 @@
 ---
 layout: post
 title: System quality attributes
-tags: [architecture]
+tags: [architecture, books]
 ---
 
 I'm reading the book "Designing Data-Intensive Applications" 
