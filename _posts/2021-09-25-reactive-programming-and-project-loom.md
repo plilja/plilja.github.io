@@ -29,7 +29,7 @@ they will return Mono<SomeType> or Flux<SomeType>. This is my biggest
 argument against Spring Reactive. 
 
 I think that Reactive Programming is a trend that will go away. Most
-programs will not need the extra efficiency. I think [Project Loom] (https://openjdk.java.net/projects/loom/) will remove any the need for it, since it should
+programs will not need the extra efficiency. I think [Project Loom](https://openjdk.java.net/projects/loom/) will remove any need for it, since it should
 essentially provide all of the benefits but none of the drawbacks.
 I think that it's also worth considering if the added complexity of
 using a reactive paradigm is really worth it. Does your application really need
