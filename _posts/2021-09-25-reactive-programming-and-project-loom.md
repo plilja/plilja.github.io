@@ -24,8 +24,8 @@ despite not being trendy, I think it's the most natural
 programming style. Imperative Programming is also the easiest to debug.
 
 Reactive Programming as it is done in Spring will infect all of your
-code base. Instead of your classes returning SomeType or List<SomeType>
-they will return Mono<SomeType> or Flux<SomeType>. This is my biggest
+code base. Instead of your classes returning `SomeType` or `List<SomeType>`
+they will return `Mono<SomeType>` or `Flux<SomeType>`. This is my biggest
 argument against Spring Reactive. 
 
 I think that Reactive Programming is a trend that will go away. Most
