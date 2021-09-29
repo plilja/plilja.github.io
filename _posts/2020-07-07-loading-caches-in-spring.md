@@ -19,15 +19,15 @@ a background thread without impacting the performance
 of the caller. This is an attractive feature.
 
 If you've used the caching functionality of Spring you've
-probably used the @Cacheable annotation. Unfortunately,
+probably used the `@Cacheable` annotation. Unfortunately,
 the cacheable annotation doesn't play nicely with loading caches.
 Loading caches (in Caffeine at least) require a loading function
 to be provided when the cache is instantiated. In Spring
-that will usually by in a @Configuration-class. Whereas the
-loading function is defined by the @Cacheable annotation.
+that will usually be in a `@Configuration`-class. Whereas the
+loading function is defined by the `@Cacheable` annotation.
 
 I've written [a small library](https://github.com/plilja/spring-loading-caffeine) to bridge this gap.
-It works by using [AOP](https://en.wikipedia.org/wiki/Aspect-oriented_programming) to intercept calls to @Cacheable-methods
+It works by using [AOP](https://en.wikipedia.org/wiki/Aspect-oriented_programming) to intercept calls to `@Cacheable`-methods
 and create the loading cache with its loading function as
 a reflection handle to the intercepted call.
 
@@ -69,7 +69,7 @@ class LoadingCacheableAspect {
 }
 ```
 
-To use the library you need to import its configuration (LoadingCacheConfiguration)
+To use the library you need to import its configuration (`LoadingCacheConfiguration`)
 and at each place you use the cache, you must also specify a key generator. 
 
 ```java
