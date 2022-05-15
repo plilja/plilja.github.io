@@ -52,8 +52,8 @@ I.e a class in `com.foo.bar` can depend on a class in `com.foo` but a class in `
 
 Avoiding introducing package cycles can be hard in practice. You can use IntelliJ to find
 them using the "Analyze Cyclic Dependencies" feature. The following image shows
-that feature being used on the project "Spring Cloud Sleuth". There is a cyclic dependency
-between the packages `org.springframework.cloud.sleuth.instrument.reactor` and 
-`org.springframework.cloud.sleuth.instrument.web`.
+that feature being used on the project [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth). There is a cyclic dependency
+between the packages `org...instrument.reactor` and 
+`org...instrument.web`.
 
 ![Cyclic dependencies](/images/idea-cyclic-dependencies.jpg "Idea Analyze Cyclic Dependencies")
