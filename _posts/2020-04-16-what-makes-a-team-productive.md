@@ -3,7 +3,7 @@ layout: post
 title: What makes a team productive?
 tags: [process, productivity]
 ---
-My interests mostly lie in the technical side of software
+My interests primarily lie in the technical side of software
 development. But through experience, I have learned that
 the softer values matter. In this post, I'm going to try
 and summarize some thoughts on how to keep your developers
@@ -25,12 +25,12 @@ For a larger project where the REPL is not suitable. Things
 to consider when optimizing for iteration speed are:
 
 * How fast will you know that your solution doesn't break things? 
-** Good automated tests, that run quickly will help you
-** If manual testing is required you want it done as close after commit as possible
-* How long will it take after commit, until the task is completely done?
-** Things like complex release processes, manual testing, documentation will work against you here
+** Good automated tests that run quickly will help you
+** If manual testing is required, you want it done as close after commit as possible
+* How long will it take after commit until the task is completely done?
+** Things like complex release processes, manual testing and documentation will work against you here
 * Do you need to talk to someone else to fix something?
-** The slower that person is to respond the longer the task will take. Typically people close to you will be quicker to respond, because they know you and their agenda aligns with yours. Therefore you want to minimize dependencies on personnel outside the team. Third-party dependencies are going to be the worst.
+** The slower that person is to respond, the longer the task will take. Typically people close to you will be quicker to respond, because they know you and their agenda aligns with yours. Therefore you want to minimize dependencies on personnel outside the team. Third-party dependencies are going to be the worst.
 
 ## Having fun
 
@@ -62,8 +62,8 @@ some things are just complex. But a lot of the time it can be simpler.
 
 Some things to think about:
 
-1. Adding technologies, third-party dependencies, tooling and so on will usually add to your complexity
-2. Refactoring into smaller classes and methods can make each individual class and method easier to understand, but at the same time it can make the relationships between them harder to understand
+1. Adding technologies, third-party dependencies, tooling, and so on will usually add to your complexity
+2. Refactoring into smaller classes and methods can make each individual class and method easier to understand, but at the same time, it can make the relationships between them harder to understand
 3. Microservices will usually be more complex than monoliths (microservices have some other qualities that may make them preferable). 
 4. More and smaller microservices will probably mean that the system as a whole will be more complex.
 5. If you're in a larger organization with separate Platform- or Architecture teams. You might want to make it their highest priority to keep your "feature teams" productive. I think it makes sense to abstract away the technical problems from the "feature teams".
@@ -85,8 +85,8 @@ Be pragmatic about them, don't trust them blindly.
 
 For example, it's not going to be a good idea
 to have your developers doing nothing just because an agile
-coach said that 4 should be your VIP-limit and 4 issues are
-currently sitting blocked waiting for an answer from a third-party.
+coach said that four should be your VIP-limit and four issues are
+currently sitting blocked, waiting for an answer from a third party.
 
 ## Best tools
 
@@ -95,8 +95,8 @@ If possible, you should let your developers pick their own tools.
 This includes stuff like laptop, OS, monitor, and IDE.
 
 Also ensure that you're working space is reasonably quiet. 
-A large part of programming is about concentration and that will
-drastically drop in a noise environment.
+A large part of programming is about concentration, and that will
+drastically drop in a noisy environment.
 
 If you have an open-plan office, please think about how you
 can minimize noise. You might also want to consider hiring
