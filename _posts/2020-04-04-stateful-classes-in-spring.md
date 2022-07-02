@@ -15,14 +15,14 @@ Instead, you typically end up putting your logic in some kind of
 Service-class that acts upon the data coming as a method parameter.
 I.e. you will end up with imperative code. 
 
-Personally I kind of like imperative programming so I'm not saying this
+Personally, I kind of like imperative programming, so I'm not saying this
 is necessarily bad. But it does puzzle me a bit, Spring is a very 
-popular Java framework and Java is a language that strongly 
+popular Java framework, and Java is a language that strongly 
 encourages object-oriented programming.
 
-Therefore I'm going to try writing some stateful Spring classes containing
+Therefore I will try writing some stateful Spring classes containing
 business logic. I'm going to use a shopping cart for an online store
-as an example. Of course, this example is going to be simple enough
+as an example. Of course, this example will be simple enough
 that the right solution would be to put everything in the
 controller. But let's imagine that the logic was a bit more convoluted,
 as it probably would have been in a real case.
@@ -121,15 +121,15 @@ class CartService {
 My thoughts on how to write this in a more object-oriented way would be something like the code snippets 
 below. By annotating the Cart class as @Scope("provided"), Spring will create a new instance for
 it whenever requested. The method annotated with @Lookup will be used to create that instance. 
-It does feels a little scary having state on classes managed by Spring. 
+It does feel a little scary having state on classes managed by Spring. 
 
-In this simple example the previous solution is probably preferable. In fact we could have skipped the
+In this simple example, the previous solution is probably preferable. In fact, we could have skipped the
 service and put everything in the controller. 
 
-For a larger project, I can see the winnings  with the object oriented approach being larger. 
+For a larger project, I can see the winnings with the object oriented approach being larger. 
 You typically wouldn't want to pass around "cartId"'s everywhere. You don't want to pass 
 around CartEntities either. But in a large project for a shopping site, the cart object 
-is probably going to be a central concept.
+will probably be a central concept.
 
 ##### Controller
 ```java
