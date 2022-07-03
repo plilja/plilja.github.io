@@ -5,27 +5,27 @@ tags: [architecture, java]
 ---
 
 One problem with architectures and code styles is that
-they don't have a strict definition. They typically
+they don't have a strict definition. Instead, they typically
 exist as a drawing or on a company wiki. Or even worse,
-in the collective mind of the senior employees of the company.
+in the collective mind of the company's senior employees.
 
 In this post, I'm going to explore some options for enforcing
 an architecture in a Java project.
 
-Any kind of enforcing will have to be made
+Any kind of enforcement will have to be made
 by a computer. This will be a fine line between
 adding value and simply being annoying.
 
 For code style and inspections, I find the most useful,
-and least annoying, solution is to ensure every team
+and least annoying solution is to ensure every team
 member has the same IntelliJ settings. 
 
 Instead, I propose focusing on stuff where violations
-would be expensive. Personally, I would say that
+would be expensive. I would say that
 controlling dependencies is important. Especially since
 as soon as you import a third-party library (like Spring),
 you get a lot of transitive dependencies, that you might
-not want but you cannot escape.
+not want but cannot escape.
 
 Doing some investigation, I found [ArchUnit](https://www.archunit.org) to
 look quite promising. You can use it to write unit test that verifies
@@ -58,10 +58,10 @@ public class DependencyCheck {
 
 Here are a few examples of what you can do with ArchUnit:
 * Enforce that no package cycles are present
-* Enforce that in a layered architecture, dependencies flow one way (GUI -> Logic -> Persistence for example)
-* Enforce that an api-package does not access an impl-package
-* Enforce that an impl-package A does not access impl-package B (only api-package B)
-* Enforcing naming conventions (for example all classes annotated with @RestController should be named ...Controller)
+* Enforce that in a layered architecture, dependencies flow one way (GUI -> Logic -> Persistence, for example)
+* Enforce that an API-package does not access an impl-package
+* Enforce that an impl-package A does not access impl-package B (only API-package B)
+* Enforcing naming conventions (for example, all classes annotated with @RestController should be named ...Controller)
 
 Here is a link to the [documentation](https://www.archunit.org/userguide/html/000_Index.html) for ArchUnit.
 
