@@ -20,16 +20,16 @@ Person getPersonById(int personId) {
     ...
 }
 ```
-The only thing that is unclear from the type signature,
-is what would happen if the person was not found. And in
+The only thing unclear from the type signature
+is what would happen if the person is not found. And in
 this case, that is not documented.
 
 Searching IntelliJ Marketplace, I found that there are even
-plugins that will generate such Javadoc for you. I think
+plugins that will generate such Javadoc for you. I believe
 this bad practice comes from universities. When I went to
-university we were told that every method should be documented.
+university, we were told that every method should be documented.
 
 My opinion is that if you feel the need to document your code,
 in a strongly typed language, then you should interpret that
-as a code smell. Probably you can look for a better method
+as a code smell. You can probably look for a better method
 name or a cleaner abstraction and leave out the documentation.
