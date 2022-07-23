@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monitoring slow calls
+title: Monitoring Slow Calls
 tags: [monitoring, crosscut]
 ---
 

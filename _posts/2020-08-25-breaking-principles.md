@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Breaking principles
+title: Breaking Principles
 tags: [architecture, principles]
 ---
 

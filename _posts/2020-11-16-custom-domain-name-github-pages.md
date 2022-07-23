@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom domain name on GitHub pages
+title: Custom Domain Name on GitHub Pages
 tags: [github]
 ---
 

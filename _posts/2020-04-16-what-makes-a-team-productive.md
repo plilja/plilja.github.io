@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What makes a team productive?
+title: What Makes a Team Productive?
 tags: [process, productivity]
 ---
 My interests primarily lie in the technical side of software

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stateful classes in Spring
+title: Stateful Classes in Spring
 tags: [spring, architecture, java]
 ---
 

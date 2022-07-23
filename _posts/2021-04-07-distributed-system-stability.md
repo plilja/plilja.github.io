@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Distributed system stability
+title: Distributed System Stability
 tags: [architecture]
 ---
 

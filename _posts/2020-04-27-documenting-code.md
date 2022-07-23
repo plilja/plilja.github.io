@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Documenting code
+title: Documenting Code
 tags: [documentation]
 ---
 

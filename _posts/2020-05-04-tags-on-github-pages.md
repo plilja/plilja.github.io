@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tags on GitHub pages
+title: Tags on GitHub Pages
 tags: [github]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loading caches in Spring
+title: Loading Caches in Spring
 tags: [spring, java, caching]
 ---
 

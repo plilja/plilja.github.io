@@ -1,6 +1,6 @@
 ---
 layout: post
-title: API versioning
+title: API Versioning
 tags: [java, spring]
 ---
 

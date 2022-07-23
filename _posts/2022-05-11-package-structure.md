@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Package structure
+title: Package Structure
 tags: [java, architecture]
 ---
 

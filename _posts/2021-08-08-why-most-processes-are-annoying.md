@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why most processes are annoying
+title: Why Most Processes are Annoying
 tags: [ramble]
 ---
 

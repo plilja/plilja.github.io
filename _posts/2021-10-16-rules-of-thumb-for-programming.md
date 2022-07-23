@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rules of thumb for programming
+title: Rules of Thumb for Programming
 tags: [ramble, principles]
 ---
 

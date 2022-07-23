@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Audit trail
+title: Audit Trail
 tags: [architecture]
 ---
 

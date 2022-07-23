@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistent Vim sessions
+title: Persistent Vim Sessions
 tags: [vim]
 ---
 

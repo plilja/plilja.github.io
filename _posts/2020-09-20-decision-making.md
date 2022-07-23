@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Decision making
+title: Decision Making
 tags: [productivity]
 ---
 

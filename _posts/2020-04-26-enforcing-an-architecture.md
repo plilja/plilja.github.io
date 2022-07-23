@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enforcing an architecture
+title: Enforcing an Architecture
 tags: [architecture, java]
 ---
 

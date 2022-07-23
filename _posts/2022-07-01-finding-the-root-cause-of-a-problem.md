@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding the root cause of a problem
+title: Finding the Root Cause of a Problem
 tags: [ramble]
 ---
 

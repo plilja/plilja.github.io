@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System quality attributes
+title: System Quality Attributes
 tags: [architecture, books]
 ---
 

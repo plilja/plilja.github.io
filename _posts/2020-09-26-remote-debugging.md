@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remote debugging
+title: Remote Debugging
 tags: [java, tools]
 ---
 

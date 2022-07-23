@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring aspects ordering
+title: Spring Aspects Ordering
 tags: [spring, java]
 ---
 

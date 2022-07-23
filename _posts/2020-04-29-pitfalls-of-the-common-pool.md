@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pitfalls of the common pool
+title: Pitfalls of the Common Pool
 tags: [java]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Never compromise on quality
+title: Never Compromise on Quality
 tags: [ramble, principles, books]
 ---
 
