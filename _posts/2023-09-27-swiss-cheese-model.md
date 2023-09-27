@@ -14,8 +14,8 @@ That change might be a feature rollout, a support action, or something similar. 
 * Integration tests
 * Code review
 * Manual testing
-* Second pair of eyes (one person acts, another person checks)
-* Gradual rollout (first 1 customer, then 10, then 100, then 10 percent)
+* Dual approval (one person acts, another person checks)
+* Gradual rollout (for example: first 1 customer, then 10, then 100, then 10 percent)
 
 The usual mistake companies make is that they make all the layers mandatory. As they encounter production incidents they continue to add layers to prevent similar incidents from occurring in the future. This will make most rollouts more cumbersome than they need to be. After all, most changes in production should be small and safe. If you need all those steps for all your changes, then you have a bigger problem.
 
