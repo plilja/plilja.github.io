@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spring Monolith and breaking dependency cycles
+title: Spring Monolith and Breaking Dependency Cycles
 tags: [architecture, spring]
 ---
 
@@ -17,7 +17,7 @@ it gives you very few features that you cannot do yourself:
 * It gives you an implementation of the outbox pattern (you need a database for this).
 * It lets you generate documentation including a graph showing module dependencies.
 
-Verifying cycles and enforcing dependencies can be done using ArchUnit, which 
+Verifying cycles and enforcing dependencies can be done using [ArchUnit](/enforcing-an-architecture), which 
 is actually what Spring Monolith does. Of course, if your application is already 
 modularized into maven modules, then you get cycle and dependency validation for free.
 
@@ -90,3 +90,7 @@ functionality. If you can find a good name for that orchestrator this might make
 sense. In our example with `books` and `payment` we might imagine that the dependency 
 problem is part of the checkout flow. `checkout` seems like it might be a good module,
 whereas `books-payment-orchestrator` from my graph doesn't seem like a good module.
+
+Also, see my previous post about [Modularizing a Java Application](/modularizing-a-java-application).
+These concepts are not new, and you do not need a monolith to benefit from them. However, the benefits
+grow when the applicaiton is larger.
