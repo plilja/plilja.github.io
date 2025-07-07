@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JUnit 5 non-static Parameterized Method
-tags: [java ]
+tags: [java, testing]
 ---
 
 JUnit 5 provides a significant upgrade over JUnit 4 in terms
@@ -59,12 +59,12 @@ class NonStaticParametersTest {
     @MethodSource("parameters")
     @ParameterizedTest
     void test(int a, int b, int expectedResult) {
-        System.out.printf("%d+%d=%d%n", a, b, expectedResult);
+        System.out.printf("Test %d+%d=%d%n", a, b, expectedResult);
         assertEquals(expectedResult, a + b);
     }
 
     private List<Arguments> parameters() {
-        System.out.printf("parameters (myService=%s)%n", myService);
+        System.out.printf("Parameters (myService=%s)%n", myService);
         return List.of(
                 Arguments.of(1, 2, 3),
                 Arguments.of(2, 2, 4)
@@ -72,8 +72,8 @@ class NonStaticParametersTest {
     }
 
     @Test
-    void anotherTestMethod() {
-        System.out.println("anotherTestMethod");
+    void anotherTest() {
+        System.out.println("Another test");
     }
 }
 ```
@@ -92,12 +92,12 @@ The output of running this test is the following:
 
 Before all
 Before each (counter=1)
-anotherTestMethod
-parameters (myService=se.plilja.junit_playground.MyService@747f6c5a)
+Another test
+Parameters (myService=se.plilja.junit_playground.MyService@747f6c5a)
 Before each (counter=2)
-1+2=3
+Test 1+2=3
 Before each (counter=3)
-2+2=4
+Test 2+2=4
 ```
 
 As you can see from the output, you have access to the bean `MyService` from the
