@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enforcing an Architecture
-tags: [architecture, java]
+tags: [architecture, java, testing]
 ---
 
 One problem with architectures and code styles is that
