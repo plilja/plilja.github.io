@@ -82,7 +82,7 @@ For example, I have uploaded the file from above here:
 
 You can access the fake API using the public JSON Placeholder API server:
 
-https://my-json-server.typicode.com/plilja/jsonplaceholder-example
+[https://my-json-server.typicode.com/plilja/jsonplaceholder-example](https://my-json-server.typicode.com/plilja/jsonplaceholder-example)
 
 For example, the following URLs should work:
 
