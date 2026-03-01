@@ -2,7 +2,7 @@
 layout: post
 title: Monitoring Slow Calls
 tags: [monitoring, crosscut]
-keywords: [monitoring, crosscut]
+keywords: [monitoring, observability, aop, aspect-oriented-programming, performance-monitoring, metrics, spring-framework, logging, distributed-tracing]
 ---
 
 It's not uncommon for problems to only happen in production.

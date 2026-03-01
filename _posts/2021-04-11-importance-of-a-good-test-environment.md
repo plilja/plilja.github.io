@@ -2,7 +2,7 @@
 layout: post
 title: Importance of a Good Test Environment
 tags: [ramble]
-keywords: [ramble]
+keywords: [test-environment, testing, devops, productivity, developer-productivity, ci-cd, test-automation, infrastructure]
 ---
 
 The importance of having a good test environment is

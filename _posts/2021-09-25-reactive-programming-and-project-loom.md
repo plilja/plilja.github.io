@@ -2,7 +2,7 @@
 layout: post
 title: Reactive Programming and Project Loom
 tags: [java, spring]
-keywords: [java, spring]
+keywords: [reactive-programming, project-loom, spring-webflux, virtual-threads, async-programming, java, performance-optimization]
 ---
 
 Reactive Programming has been a trend in the Java space

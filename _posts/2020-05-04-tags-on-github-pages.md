@@ -2,7 +2,7 @@
 layout: post
 title: Tags on GitHub Pages
 tags: [github]
-keywords: [github]
+keywords: [github-pages, jekyll, static-site, blog, web-development, github]
 ---
 
 I recently added tags to my GitHub pages (i.e. the page you're currently viewing).

@@ -2,7 +2,7 @@
 layout: post
 title: Never Compromise on Quality
 tags: [ramble, principles, books]
-keywords: [ramble, principles, books]
+keywords: [code-quality, software-craftsmanship, team-morale, peopleware, productivity, technical-excellence]
 ---
 
 I'm currently reading the classic book "Peopleware".

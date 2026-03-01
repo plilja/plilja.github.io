@@ -2,7 +2,7 @@
 layout: post
 title: Estimates
 tags: [ramble]
-keywords: [ramble]
+keywords: [estimates, project-planning, agile, task-estimation, sprint-planning, project-management, software-estimation, planning]
 ---
 
 Estimating how long a development task will take is notoriously difficult. 

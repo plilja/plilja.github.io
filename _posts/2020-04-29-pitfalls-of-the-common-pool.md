@@ -2,7 +2,7 @@
 layout: post
 title: Pitfalls of the Common Pool
 tags: [java]
-keywords: [java]
+keywords: [java, concurrency, parallel-streams, completablefuture, forkjoinpool, thread-pools, executor-service, async-programming]
 ---
 
 Writing parallel Java code has certainly become

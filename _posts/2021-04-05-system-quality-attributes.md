@@ -2,7 +2,7 @@
 layout: post
 title: System Quality Attributes
 tags: [architecture, books]
-keywords: [architecture, books]
+keywords: [software-architecture, reliability, scalability, maintainability, system-design, non-functional-requirements, performance]
 ---
 
 I'm reading the book "Designing Data-Intensive Applications" 

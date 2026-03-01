@@ -2,7 +2,7 @@
 layout: post
 title: Persistent Vim Sessions
 tags: [vim]
-keywords: [vim]
+keywords: [vim, text-editor, vimrc, undo-history, productivity, vim-plugins]
 ---
 
 I just learned that you can persist the history between Vim sessions. This is hugely useful in my view, and it just takes two lines in your vimrc to set it up.

@@ -2,7 +2,7 @@
 layout: post
 title: Soft Skills in Software Development
 tags: [ramble]
-keywords: [ramble]
+keywords: [soft-skills, team-collaboration, code-review, communication, professional-development, teamwork, workplace-culture]
 ---
 
 When interviewing for an open position as a software developer,

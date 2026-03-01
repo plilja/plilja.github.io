@@ -2,7 +2,7 @@
 layout: post
 title: Distributed System Stability
 tags: [architecture]
-keywords: [architecture]
+keywords: [microservices, distributed-systems, system-stability, fault-tolerance, resilience, monolith-vs-microservices]
 ---
 
 One of the selling points of a microservice architecture

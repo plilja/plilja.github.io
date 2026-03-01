@@ -2,7 +2,7 @@
 layout: post
 title: Decision Making
 tags: [productivity]
-keywords: [productivity]
+keywords: [decision-making, productivity, law-of-triviality, code-review, team-management, prioritization]
 ---
 
 Making decisions can be hard. Especially making hard

@@ -2,7 +2,7 @@
 layout: post
 title: Breaking Principles
 tags: [architecture, principles]
-keywords: [architecture, principles]
+keywords: [software-design, software-principles, design-principles, dry-principle, single-responsibility, code-readability, pragmatic-programming, tdd]
 ---
 
 Whether it comes to low-level design or high-level design, I find

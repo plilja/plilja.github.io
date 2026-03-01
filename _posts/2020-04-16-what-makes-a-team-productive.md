@@ -2,7 +2,7 @@
 layout: post
 title: What Makes a Team Productive?
 tags: [process, productivity]
-keywords: [process, productivity]
+keywords: [team-productivity, developer-experience, iteration-speed, code-review, technical-debt, team-morale, developer-tools, work-environment]
 ---
 My interests primarily lie in the technical side of software
 development. But through experience, I have learned that

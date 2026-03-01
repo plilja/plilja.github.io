@@ -2,7 +2,7 @@
 layout: post
 title: Package Structure
 tags: [java, architecture]
-keywords: [java, architecture]
+keywords: [java, package-structure, package-by-feature, package-by-layer, code-organization, software-architecture, package-cycles]
 ---
 
 I think that many Java programmers don't spend enough time thinking about 

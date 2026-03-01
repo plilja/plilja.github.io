@@ -2,7 +2,7 @@
 layout: post
 title: Why Most Processes are Annoying
 tags: [ramble]
-keywords: [ramble]
+keywords: [process, software-development-process, agile, team-efficiency, bureaucracy, process-improvement]
 ---
 
 Processes are a "recipe" we follow to ensure that something is performed. 

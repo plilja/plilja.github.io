@@ -2,7 +2,7 @@
 layout: post
 title: Programming puzzles
 tags: [ramble]
-keywords: [ramble]
+keywords: [leetcode, coding-interviews, algorithms, data-structures, interview-preparation, programming-practice]
 ---
 
 I have been doing a fair amount of programming puzzles recently as

@@ -2,7 +2,7 @@
 layout: post
 title: Decomposition
 tags: [productivity, ramble]
-keywords: [productivity, ramble]
+keywords: [problem-decomposition, software-design, task-breakdown, agile-development, code-organization]
 ---
 
 Decomposition is the process of breaking down a problem into smaller sub-problems that are easier to reason about.

@@ -2,7 +2,7 @@
 layout: post
 title: Enforcing an Architecture
 tags: [architecture, java, testing]
-keywords: [architecture, java, testing]
+keywords: [software-architecture, archunit, dependency-management, unit-testing, clean-code, code-quality, package-structure, architectural-testing, spring-framework]
 ---
 
 One problem with architectures and code styles is that

@@ -2,7 +2,7 @@
 layout: post
 title: Heilmeier's Catechism
 tags: [ramble]
-keywords: [ramble]
+keywords: [project-planning, requirements, darpa, problem-solving, software-projects, product-development]
 ---
 
 It is important to remember why a task is performed. I've seen

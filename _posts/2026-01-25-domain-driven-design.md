@@ -2,7 +2,7 @@
 layout: post
 title: Domain-Driven Design
 tags: [architecture]
-keywords: [architecture]
+keywords: [domain-driven-design, ddd, bounded-context, aggregate-root, ubiquitous-language, software-architecture, core-domain, anti-corruption-layer]
 ---
 
 I recently finished the classic book Domain-Driven Design by Eric Evans.

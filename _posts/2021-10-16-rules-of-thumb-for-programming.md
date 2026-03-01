@@ -2,7 +2,7 @@
 layout: post
 title: Rules of Thumb for Programming
 tags: [ramble, principles]
-keywords: [ramble, principles]
+keywords: [programming-principles, software-principles, clean-code, command-query-separation, code-organization, offensive-programming, best-practices, code-standards]
 ---
 
 The idea of having a set of rules one can follow to write

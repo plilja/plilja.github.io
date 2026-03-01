@@ -2,7 +2,7 @@
 layout: post
 title: JSONPlaceholder API, Fake REST APIs
 tags: [tools]
-keywords: [tools]
+keywords: [jsonplaceholder, jsonplaceholder-api, api, rest-api, api-mocking, json-server, frontend-development, mock-server]
 ---
 
 [_JSONPlaceholder API_](https://jsonplaceholder.typicode.com), also known as JSON Placeholder, 

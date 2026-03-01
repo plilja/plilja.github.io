@@ -2,7 +2,7 @@
 layout: post
 title: Spring Modulith and Breaking Dependency Cycles
 tags: [architecture, spring]
-keywords: [architecture, spring]
+keywords: [spring-modulith, modular-monolith, dependency-cycles, software-architecture, archunit, module-design, dependency-inversion, event-driven, java]
 ---
 
 I attended a workshop on modular monoliths using Spring Modulith, during Spring I/O. 

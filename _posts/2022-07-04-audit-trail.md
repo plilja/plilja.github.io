@@ -2,7 +2,7 @@
 layout: post
 title: Audit Trail
 tags: [architecture]
-keywords: [architecture]
+keywords: [audit-trail, event-sourcing, compliance, database-design, history-tracking, data-versioning, financial-systems]
 ---
 
 Depending on what type of system you are working on,

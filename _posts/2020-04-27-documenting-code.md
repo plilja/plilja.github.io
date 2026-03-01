@@ -2,7 +2,7 @@
 layout: post
 title: Documenting Code
 tags: [documentation]
-keywords: [documentation]
+keywords: [code-documentation, javadoc, clean-code, self-documenting-code, code-comments, best-practices]
 ---
 
 It amazes me how often you see useless code documentation.

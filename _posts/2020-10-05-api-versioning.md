@@ -2,7 +2,7 @@
 layout: post
 title: API Versioning
 tags: [java, spring]
-keywords: [java, spring]
+keywords: [api-versioning, rest-api, java, backward-compatibility, spring-framework, jackson, api-design, breaking-changes]
 ---
 
 One big disadvantage of exposing anything as an API is that
