@@ -2,6 +2,7 @@
 layout: post
 title: Modularizing a Java Application
 tags: [architecture, java]
+keywords: [architecture, java]
 ---
 
 Microservice architectures have been in fashion for several years

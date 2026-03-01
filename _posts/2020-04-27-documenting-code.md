@@ -2,6 +2,7 @@
 layout: post
 title: Documenting Code
 tags: [documentation]
+keywords: [documentation]
 ---
 
 It amazes me how often you see useless code documentation.

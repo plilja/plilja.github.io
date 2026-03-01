@@ -2,6 +2,7 @@
 layout: post
 title: Pitfalls of the Common Pool
 tags: [java]
+keywords: [java]
 ---
 
 Writing parallel Java code has certainly become

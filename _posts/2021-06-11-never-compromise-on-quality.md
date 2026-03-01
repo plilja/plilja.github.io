@@ -2,6 +2,7 @@
 layout: post
 title: Never Compromise on Quality
 tags: [ramble, principles, books]
+keywords: [ramble, principles, books]
 ---
 
 I'm currently reading the classic book "Peopleware".

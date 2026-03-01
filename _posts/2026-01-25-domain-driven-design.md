@@ -2,6 +2,7 @@
 layout: post
 title: Domain-Driven Design
 tags: [architecture]
+keywords: [architecture]
 ---
 
 I recently finished the classic book Domain-Driven Design by Eric Evans.

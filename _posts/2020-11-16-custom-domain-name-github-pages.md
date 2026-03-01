@@ -2,6 +2,7 @@
 layout: post
 title: Custom Domain Name on GitHub Pages
 tags: [github]
+keywords: [github]
 ---
 
 A simple and free way to set up a blog is to use

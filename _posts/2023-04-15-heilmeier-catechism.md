@@ -2,6 +2,7 @@
 layout: post
 title: Heilmeier's Catechism
 tags: [ramble]
+keywords: [ramble]
 ---
 
 It is important to remember why a task is performed. I've seen

@@ -2,6 +2,7 @@
 layout: post
 title: Estimates
 tags: [ramble]
+keywords: [ramble]
 ---
 
 Estimating how long a development task will take is notoriously difficult. 

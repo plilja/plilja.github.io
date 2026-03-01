@@ -2,6 +2,7 @@
 layout: post
 title: Enforcing an Architecture
 tags: [architecture, java, testing]
+keywords: [architecture, java, testing]
 ---
 
 One problem with architectures and code styles is that

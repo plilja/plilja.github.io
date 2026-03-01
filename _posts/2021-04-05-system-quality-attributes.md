@@ -2,6 +2,7 @@
 layout: post
 title: System Quality Attributes
 tags: [architecture, books]
+keywords: [architecture, books]
 ---
 
 I'm reading the book "Designing Data-Intensive Applications" 

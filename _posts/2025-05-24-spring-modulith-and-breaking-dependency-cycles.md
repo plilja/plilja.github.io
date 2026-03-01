@@ -2,6 +2,7 @@
 layout: post
 title: Spring Modulith and Breaking Dependency Cycles
 tags: [architecture, spring]
+keywords: [architecture, spring]
 ---
 
 I attended a workshop on modular monoliths using Spring Modulith, during Spring I/O. 

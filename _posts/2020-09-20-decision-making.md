@@ -2,6 +2,7 @@
 layout: post
 title: Decision Making
 tags: [productivity]
+keywords: [productivity]
 ---
 
 Making decisions can be hard. Especially making hard

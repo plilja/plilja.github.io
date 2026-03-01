@@ -2,6 +2,7 @@
 layout: post
 title: Remote Debugging
 tags: [java, tools]
+keywords: [java, tools]
 ---
 
 Remote debugging is one feature I didn't realize I needed

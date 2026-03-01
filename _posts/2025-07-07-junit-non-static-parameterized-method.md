@@ -2,6 +2,7 @@
 layout: post
 title: JUnit 5 non-static Parameterized Method
 tags: [java, testing]
+keywords: [java, testing]
 ---
 
 JUnit 5 provides a significant upgrade over JUnit 4 in terms

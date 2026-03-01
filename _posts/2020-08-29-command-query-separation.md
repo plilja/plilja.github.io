@@ -2,6 +2,7 @@
 layout: post
 title: Command Query Separation
 tags: [architecture, funcprog, principles]
+keywords: [architecture, funcprog, principles]
 ---
 
 The command-query separation (CQS) principle states that 

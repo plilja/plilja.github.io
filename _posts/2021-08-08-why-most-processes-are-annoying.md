@@ -2,6 +2,7 @@
 layout: post
 title: Why Most Processes are Annoying
 tags: [ramble]
+keywords: [ramble]
 ---
 
 Processes are a "recipe" we follow to ensure that something is performed. 

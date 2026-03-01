@@ -2,6 +2,7 @@
 layout: post
 title: Breaking Principles
 tags: [architecture, principles]
+keywords: [architecture, principles]
 ---
 
 Whether it comes to low-level design or high-level design, I find

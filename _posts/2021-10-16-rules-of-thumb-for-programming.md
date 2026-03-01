@@ -2,6 +2,7 @@
 layout: post
 title: Rules of Thumb for Programming
 tags: [ramble, principles]
+keywords: [ramble, principles]
 ---
 
 The idea of having a set of rules one can follow to write

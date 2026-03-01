@@ -2,6 +2,7 @@
 layout: post
 title: Audit Trail
 tags: [architecture]
+keywords: [architecture]
 ---
 
 Depending on what type of system you are working on,

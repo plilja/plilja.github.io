@@ -2,6 +2,7 @@
 layout: post
 title: Finding the Root Cause of a Problem
 tags: [ramble]
+keywords: [ramble]
 ---
 
 Finding the root cause of a problem is a valuable

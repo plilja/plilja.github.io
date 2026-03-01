@@ -2,6 +2,7 @@
 layout: post
 title: API Versioning
 tags: [java, spring]
+keywords: [java, spring]
 ---
 
 One big disadvantage of exposing anything as an API is that

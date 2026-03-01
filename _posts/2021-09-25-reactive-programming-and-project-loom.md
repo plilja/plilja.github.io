@@ -2,6 +2,7 @@
 layout: post
 title: Reactive Programming and Project Loom
 tags: [java, spring]
+keywords: [java, spring]
 ---
 
 Reactive Programming has been a trend in the Java space

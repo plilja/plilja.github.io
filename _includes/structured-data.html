@@ -1,0 +1,32 @@
+{% if page.layout == "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.name | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  {% if page.excerpt %}
+  "description": {{ page.excerpt | strip_html | strip_newlines | jsonify }},
+  {% endif %}
+  {% if page.keywords %}
+  "keywords": {{ page.keywords | jsonify }},
+  {% endif %}
+  "url": "{{ site.url }}{{ page.url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.name | jsonify }},
+    "url": {{ site.url | jsonify }}
+  }
+}
+</script>
+{% endif %}

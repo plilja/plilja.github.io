@@ -2,6 +2,7 @@
 layout: post
 title: JSONPlaceholder API, Fake REST APIs
 tags: [tools]
+keywords: [tools]
 ---
 
 [_JSONPlaceholder API_](https://jsonplaceholder.typicode.com), also known as JSON Placeholder, 

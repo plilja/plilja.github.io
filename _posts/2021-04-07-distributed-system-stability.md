@@ -2,6 +2,7 @@
 layout: post
 title: Distributed System Stability
 tags: [architecture]
+keywords: [architecture]
 ---
 
 One of the selling points of a microservice architecture

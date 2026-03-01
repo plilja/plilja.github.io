@@ -2,6 +2,7 @@
 layout: post
 title: Soft Skills in Software Development
 tags: [ramble]
+keywords: [ramble]
 ---
 
 When interviewing for an open position as a software developer,

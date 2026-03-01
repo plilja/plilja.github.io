@@ -2,6 +2,7 @@
 layout: post
 title: Package Structure
 tags: [java, architecture]
+keywords: [java, architecture]
 ---
 
 I think that many Java programmers don't spend enough time thinking about 

@@ -2,6 +2,7 @@
 layout: post
 title: Spring Aspects Ordering
 tags: [spring, java]
+keywords: [spring, java]
 ---
 
 A lot of features of Spring framework rely on aspects to add solutions to cross-cutting

@@ -2,6 +2,7 @@
 layout: post
 title: Monitoring Slow Calls
 tags: [monitoring, crosscut]
+keywords: [monitoring, crosscut]
 ---
 
 It's not uncommon for problems to only happen in production.
