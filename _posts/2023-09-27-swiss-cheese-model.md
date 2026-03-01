@@ -3,6 +3,7 @@ layout: post
 title: Swiss Cheese model
 tags: [ramble]
 keywords: [risk-management, testing, deployment-strategy, code-review, quality-assurance, production-deployment, gradual-rollout]
+excerpt: "Prevent system failures with the Swiss Cheese Model. Layer defensive measures so individual weaknesses don't cause complete system breakdown."
 ---
 
 The Swiss Cheese model metaphorizes the defense against some risk with layers of cheese. Each layer of cheese has holes in it. The more layers you stack on top of each other the less likely it is that the holes will align.

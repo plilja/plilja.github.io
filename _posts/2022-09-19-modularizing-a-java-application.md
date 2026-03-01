@@ -3,6 +3,7 @@ layout: post
 title: Modularizing a Java Application
 tags: [architecture, java]
 keywords: [modular-monolith, java, microservices, software-architecture, maven-modules, module-design, code-organization]
+excerpt: "Build modular monoliths with Maven modules instead of microservices. Structure business domains with clear dependencies and prepare for easy microservice extraction."
 ---
 
 Microservice architectures have been in fashion for several years

@@ -3,6 +3,7 @@ layout: post
 title: API Versioning
 tags: [java, spring]
 keywords: [api-versioning, rest-api, java, backward-compatibility, spring-framework, jackson, api-design, breaking-changes]
+excerpt: "Version REST APIs elegantly with jackson-versioning. Transform JSON fields automatically for backward compatibility without duplicating controllers or DTOs."
 ---
 
 One big disadvantage of exposing anything as an API is that

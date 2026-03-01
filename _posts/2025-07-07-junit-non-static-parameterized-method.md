@@ -3,6 +3,7 @@ layout: post
 title: JUnit 5 non-static Parameterized Method
 tags: [java, testing]
 keywords: [junit5, parameterized-tests, unit-testing, spring-boot-test, test-lifecycle, method-source, java-testing, junit, java]
+excerpt: "Create JUnit 5 parameterized tests with non-static @MethodSource in Spring Boot. Inject dependencies into test parameter provider methods."
 ---
 
 JUnit 5 provides a significant upgrade over JUnit 4 in terms

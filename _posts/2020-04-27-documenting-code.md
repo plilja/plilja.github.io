@@ -3,6 +3,7 @@ layout: post
 title: Documenting Code
 tags: [documentation]
 keywords: [code-documentation, javadoc, clean-code, self-documenting-code, code-comments, best-practices]
+excerpt: "Stop writing useless Javadoc that duplicates type signatures. Learn when code documentation actually adds value and when clean code is better than comments."
 ---
 
 It amazes me how often you see useless code documentation.

@@ -3,6 +3,7 @@ layout: post
 title: Loading Caches in Spring
 tags: [spring, java, caching]
 keywords: [java, spring-framework, caching, caffeine, guava, aop, aspect-oriented-programming, cache-loader, spring-cacheable]
+excerpt: "Integrate Caffeine loading caches with Spring @Cacheable annotation using AOP. Enable background cache refresh without impacting caller performance."
 ---
 
 Loading caches was coined by [Guava](https://github.com/google/guava). They are also

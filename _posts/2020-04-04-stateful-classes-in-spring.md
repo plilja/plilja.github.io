@@ -3,6 +3,7 @@ layout: post
 title: Stateful Classes in Spring
 tags: [spring, architecture, java]
 keywords: [spring-framework, dependency-injection, singleton-pattern, object-oriented-programming, spring-beans, prototype-scope, design-patterns, stateful-objects]
+excerpt: "Learn how to create stateful Spring beans with business logic using prototype scope and @Lookup annotation. Includes working examples comparing traditional vs OOP approaches."
 ---
 
 I have been working with Spring at work for a couple of years now. 

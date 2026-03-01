@@ -3,6 +3,7 @@ layout: post
 title: Rules of Thumb for Programming
 tags: [ramble, principles]
 keywords: [programming-principles, software-principles, clean-code, command-query-separation, code-organization, offensive-programming, best-practices, code-standards]
+excerpt: "Practical programming rules: avoid premature abstraction, favor composition, use interfaces wisely, and keep functions small. Actionable guidelines for better code."
 ---
 
 The idea of having a set of rules one can follow to write

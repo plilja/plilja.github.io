@@ -3,6 +3,7 @@ layout: post
 title: Enforcing an Architecture
 tags: [architecture, java, testing]
 keywords: [software-architecture, archunit, dependency-management, unit-testing, clean-code, code-quality, package-structure, architectural-testing, spring-framework]
+excerpt: "Enforce Java architecture rules with ArchUnit unit tests. Control dependencies, prevent package cycles, and validate naming conventions automatically in your build."
 ---
 
 One problem with architectures and code styles is that

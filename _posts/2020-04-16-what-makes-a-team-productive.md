@@ -3,6 +3,7 @@ layout: post
 title: What Makes a Team Productive?
 tags: [process, productivity]
 keywords: [team-productivity, developer-experience, iteration-speed, code-review, technical-debt, team-morale, developer-tools, work-environment]
+excerpt: "Boost developer productivity with faster iteration speed, minimal friction, optimal complexity management, and better tooling. Practical strategies for engineering leaders."
 ---
 My interests primarily lie in the technical side of software
 development. But through experience, I have learned that

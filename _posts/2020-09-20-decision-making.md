@@ -3,6 +3,7 @@ layout: post
 title: Decision Making
 tags: [productivity]
 keywords: [decision-making, productivity, law-of-triviality, code-review, team-management, prioritization]
+excerpt: "Stop wasting time on trivial decisions in code reviews. Learn Parkinson's Law of Triviality and focus your effort on architecture decisions that actually matter."
 ---
 
 Making decisions can be hard. Especially making hard

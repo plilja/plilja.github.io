@@ -3,6 +3,7 @@ layout: post
 title: Spring Aspects Ordering
 tags: [spring, java]
 keywords: [spring-framework, aop, aspect-oriented-programming, caching, cross-cutting-concerns, spring-annotations, aspect-ordering, java]
+excerpt: "Control Spring AOP aspect execution order with @Order annotation. Solve transactional and caching aspect conflicts in your Spring application."
 ---
 
 A lot of features of Spring framework rely on aspects to add solutions to cross-cutting

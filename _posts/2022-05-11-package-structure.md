@@ -3,6 +3,7 @@ layout: post
 title: Package Structure
 tags: [java, architecture]
 keywords: [java, package-structure, package-by-feature, package-by-layer, code-organization, software-architecture, package-cycles]
+excerpt: "Package by feature, not by layer. Learn why grouping Java classes by business domain beats organizing by technical layers like Controller and Repository."
 ---
 
 I think that many Java programmers don't spend enough time thinking about 

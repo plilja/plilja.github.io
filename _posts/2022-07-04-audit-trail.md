@@ -3,6 +3,7 @@ layout: post
 title: Audit Trail
 tags: [architecture]
 keywords: [audit-trail, event-sourcing, compliance, database-design, history-tracking, data-versioning, financial-systems]
+excerpt: "Implement audit trails in Java applications using Spring AOP. Track who changed what and when with minimal code using aspect-oriented programming."
 ---
 
 Depending on what type of system you are working on,

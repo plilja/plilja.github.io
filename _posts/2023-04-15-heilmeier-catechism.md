@@ -3,6 +3,7 @@ layout: post
 title: Heilmeier's Catechism
 tags: [ramble]
 keywords: [project-planning, requirements, darpa, problem-solving, software-projects, product-development]
+excerpt: "Evaluate technical projects with Heilmeier's Catechism: What are you trying to do? How is it done today? What's new? Who cares? Essential questions for project planning."
 ---
 
 It is important to remember why a task is performed. I've seen

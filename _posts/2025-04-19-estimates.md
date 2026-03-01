@@ -3,6 +3,7 @@ layout: post
 title: Estimates
 tags: [ramble]
 keywords: [estimates, project-planning, agile, task-estimation, sprint-planning, project-management, software-estimation, planning]
+excerpt: "Why software estimates are hard and how to improve them. Understand the cone of uncertainty and use techniques like story points and buffer time effectively."
 ---
 
 Estimating how long a development task will take is notoriously difficult. 

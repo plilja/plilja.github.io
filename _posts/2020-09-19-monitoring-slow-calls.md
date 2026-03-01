@@ -3,6 +3,7 @@ layout: post
 title: Monitoring Slow Calls
 tags: [monitoring, crosscut]
 keywords: [monitoring, observability, aop, aspect-oriented-programming, performance-monitoring, metrics, spring-framework, logging, distributed-tracing]
+excerpt: "Monitor slow method calls in Spring using AOP aspects. Automatically log performance metrics and track duration thresholds across all services with minimal code."
 ---
 
 It's not uncommon for problems to only happen in production.

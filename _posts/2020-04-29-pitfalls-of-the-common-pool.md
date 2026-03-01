@@ -3,6 +3,7 @@ layout: post
 title: Pitfalls of the Common Pool
 tags: [java]
 keywords: [java, concurrency, parallel-streams, completablefuture, forkjoinpool, thread-pools, executor-service, async-programming]
+excerpt: "Avoid Java ForkJoinPool common pool pitfalls that cause performance issues with parallelStream and CompletableFuture. Learn when to use dedicated Executors instead."
 ---
 
 Writing parallel Java code has certainly become
