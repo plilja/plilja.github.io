@@ -1,0 +1,15 @@
+# robots.txt for plilja.se
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://plilja.se/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+# Crawl-delay: 1
+
+# Disallow specific paths if needed (examples below)
+# Disallow: /images/
+# Disallow: /_sass/
+# Disallow: /javascript/
