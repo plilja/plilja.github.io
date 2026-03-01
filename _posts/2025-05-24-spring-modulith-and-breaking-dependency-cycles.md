@@ -40,12 +40,12 @@ will find that the dependencies between modules are not what you expect.
 Let's say you are maintaining a system that sells books and you have this
 problematic cycle.
 
-<img src="/images/modularize/problem_dependency.svg" width="70%" alt="Problem dependency"/>
+<img src="/images/modularize/problem_dependency.svg" width="70%" alt="Problem dependency" loading="lazy"/>
 
 Here are six strategies for dealing with this dependency. Which one is correct
 will depend on the situation.
 
-<img src="/images/modularize/move_to_common.svg" width="70%" alt="Move to common"/>
+<img src="/images/modularize/move_to_common.svg" width="70%" alt="Move to common" loading="lazy"/>
 
 Most often you would move the code from the module that is least central
 to your application. Because you want your peripheral modules to depend
@@ -53,14 +53,14 @@ on your core modules and not the other way around. In our example, `books`
 is more central than `payment` in a bookstore. So we move the code from `payment`
 that is used from `books` to `shared`.
 
-<img src="/images/modularize/invert_dependency.svg" width="70%" alt="Invert one side of the dependency"/>
+<img src="/images/modularize/invert_dependency.svg" width="70%" alt="Invert one side of the dependency" loading="lazy"/>
 
 In our example, we would put an interface in the `books` module and have
 an implementation of that interface in the `payment` module. Then we would inject
 that dependency, usually using a dependency injection framework into `books` at runtime.
 Note that `books` still calls `payment`, but it doesn't know that it's calling `payment`.
 
-<img src="/images/modularize/events.svg" width="70%" alt="Use events"/>
+<img src="/images/modularize/events.svg" width="70%" alt="Use events" loading="lazy"/>
 
 We can let an eventbus route events between the two modules, without
 the modules knowing who the consumers of those events are. If we put 
@@ -70,7 +70,7 @@ a common module that contains the event definitions. One limitation
 of using events is that you cannot get data back from the event processing. 
 Publishing an event is a `void` operation.
 
-<img src="/images/modularize/api_modules.svg" width="70%" alt="Extract API module"/>
+<img src="/images/modularize/api_modules.svg" width="70%" alt="Extract API module" loading="lazy"/>
 
 Extract the part of each module that is supposed to be used by other
 modules into a separate API module. Note that you should only extract
@@ -79,13 +79,13 @@ Otherwise, you will probably end up with cycles between your API module
 and the implementation module. You can use dependency injection to get
 a concrete implementation of the class from the API module.
 
-<img src="/images/modularize/merge_modules.svg" width="70%" alt="Merge modules"/>
+<img src="/images/modularize/merge_modules.svg" width="70%" alt="Merge modules" loading="lazy"/>
 
 This usually wouldn't be your first choice. In cases when there are a lot
 of strong dependencies between the two modules, it might indicate that they should
 be the same module.
 
-<img src="/images/modularize/extract_orchestrator.svg" width="70%" alt="Extract orchestrator"/>
+<img src="/images/modularize/extract_orchestrator.svg" width="70%" alt="Extract orchestrator" loading="lazy"/>
 
 Create a separate module that pulls up the dependencies into a joint
 functionality. If you can find a good name for that orchestrator this might make

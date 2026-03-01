@@ -287,7 +287,9 @@ footer {
 @import "svg-icons";
 
 table {
-    padding: 0; 
+    padding: 0;
+    display: block;
+    overflow-x: auto;
 }
 table tr {
     border-top: 1px solid #cccccc;
