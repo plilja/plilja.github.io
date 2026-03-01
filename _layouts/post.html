@@ -23,6 +23,13 @@ layout: default
 
   <div class="date">
       <span>Written on {{ page.date | date: "%B %e, %Y" }}</span>
+      {% if page.last_modified_at %}
+        {% assign modified_date = page.last_modified_at | date: "%Y-%m-%d" %}
+        {% assign published_date = page.date | date: "%Y-%m-%d" %}
+        {% if modified_date != published_date %}
+      <span> • Updated on {{ page.last_modified_at | date: "%B %e, %Y" }}</span>
+        {% endif %}
+      {% endif %}
   </div>
   {% if page.tags.size > 0 %}
   <p class="m-t-3 text-muted font-italic">
