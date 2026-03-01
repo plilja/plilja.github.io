@@ -3,6 +3,7 @@ layout: post
 title: JSONPlaceholder API, Fake REST APIs
 tags: [tools]
 keywords: [jsonplaceholder, jsonplaceholder-api, api, rest-api, api-mocking, json-server, frontend-development, mock-server]
+excerpt: "JSONPlaceholder API, also known as JSON Placeholder, is a tool for rapidly creating fake REST APIs. Perfect for frontend testing and prototyping without a backend."
 ---
 
 [_JSONPlaceholder API_](https://jsonplaceholder.typicode.com), also known as JSON Placeholder, 
