@@ -44,7 +44,7 @@ DNS provider [Loopia](https://loopia.se). The TXT-Google record is for
 verification with "Google Search Console". Google will tell you what to
 enter there if you try to access "Google Search Console" for your site.
 
-![My DNS settings](/images/dns-settings.jpg "My DNS settings")
+<img src="/images/dns-settings.jpg" alt="My DNS settings" title="My DNS settings" width="900" height="576" loading="lazy" style="height: auto;"/>
 
 Once done all of these URLs (but with your domain name and GitHub username) 
 should all lead to the HTTPS-version of your domain.

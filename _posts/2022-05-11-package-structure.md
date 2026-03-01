@@ -58,4 +58,4 @@ that feature being used on the project [Spring Cloud Sleuth](https://spring.io/p
 between the packages `org...instrument.reactor` and 
 `org...instrument.web`.
 
-![Cyclic dependencies](/images/idea-cyclic-dependencies.jpg "Idea Analyze Cyclic Dependencies")
+<img src="/images/idea-cyclic-dependencies.jpg" alt="Cyclic dependencies" title="Idea Analyze Cyclic Dependencies" width="1100" height="592" loading="lazy" style="height: auto;"/>

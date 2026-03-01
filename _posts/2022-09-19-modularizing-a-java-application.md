@@ -39,7 +39,7 @@ the same modules.
 
 I suggest an overall architecture as per the following diagram. 
 
-![Modularized Java Project diagram](/images/modular.svg "Modularized Java Project diagram")
+<img src="/images/modular.svg" alt="Modularized Java Project diagram" title="Modularized Java Project diagram" width="1246" height="1021" loading="lazy" style="height: auto;"/>
 
 For this example, I am using a very simple application for a video store. 
 It has three business areas, film, customer, and payment. Please
